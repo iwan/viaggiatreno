@@ -1,12 +1,13 @@
 require 'spec_helper'
 
 describe Viaggiatreno::URL do
-  it 'get train status URL' do
-    expect(Viaggiatreno::URL.train_status("S03200", "128")).to eq("http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/andamentoTreno/S03200/128")
+
+  it 'get train numbers URL' do
+    expect(Viaggiatreno::URL.train_numbers("656")).to eq("http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/cercaNumeroTrenoTrenoAutocomplete/656")
   end
 
-  it 'get first station URL' do
-    expect(Viaggiatreno::URL.first_station("656")).to eq("http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/cercaNumeroTrenoTrenoAutocomplete/656")
+  it 'get train status URL' do
+    expect(Viaggiatreno::URL.train_status("S03200", "128")).to eq("http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/andamentoTreno/S03200/128")
   end
 
   it 'get station list URL' do

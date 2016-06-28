@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/cercaStazione/MILANO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.viaggiatreno.it
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 28 Jun 2016 12:47:21 GMT
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+      Content-Language:
+      - en-US
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"nomeLungo":"MILANO CENTRALE","nomeBreve":"Milano Centrale","label":"Milano","id":"S01700"},{"nomeLungo":"MILANO
+        AFFORI","nomeBreve":"Milano Affori","label":null,"id":"S01078"},{"nomeLungo":"MILANO
+        BOVISA FNM","nomeBreve":"MI BOVISA FNM","label":null,"id":"S01642"},{"nomeLungo":"MILANO
+        BRUZZANO","nomeBreve":"Milano Bruzzano","label":null,"id":"S01079"},{"nomeLungo":"MILANO
+        CERTOSA","nomeBreve":"Milano Certosa","label":"Milano","id":"S01640"},{"nomeLungo":"MILANO
+        DATEO","nomeBreve":"Milano Dateo","label":null,"id":"S01650"},{"nomeLungo":"MILANO
+        FARINI","nomeBreve":"Milano Farini","label":null,"id":"S01644"},{"nomeLungo":"MILANO
+        FORLANINI","nomeBreve":"Milano Forlanini","label":null,"id":"S01492"},{"nomeLungo":"MILANO
+        GRECO PIRELLI","nomeBreve":"MI Greco Pirelli","label":null,"id":"S01326"},{"nomeLungo":"MILANO
+        LAMBRATE","nomeBreve":"Milano Lambrate","label":null,"id":"S01701"},{"nomeLungo":"MILANO
+        LANCETTI","nomeBreve":"MI Lancetti","label":null,"id":"S01643"},{"nomeLungo":"MILANO
+        NORD CADORNA","nomeBreve":"MILANO N.CADORNA","label":null,"id":"S01066"},{"nomeLungo":"MILANO
+        NORD DOMODOSSOLA","nomeBreve":"Mi.N.Domodossola","label":null,"id":"S01067"},{"nomeLungo":"MILANO
+        NORD QUARTO OGGIARO ","nomeBreve":"Mi.N.Quar.Oggiro","label":null,"id":"S01069"},{"nomeLungo":"MILANO
+        PORTA GARIBALDI","nomeBreve":"MI P. Garibaldi","label":null,"id":"S01645"},{"nomeLungo":"MILANO
+        PORTA ROMANA","nomeBreve":"MI P.ta Romana","label":null,"id":"S01632"},{"nomeLungo":"MILANO
+        PORTA VITTORIA","nomeBreve":"MI P.ta Vittoria","label":null,"id":"S01633"},{"nomeLungo":"MILANO
+        REPUBBLICA","nomeBreve":"MI Repubblica","label":null,"id":"S01648"},{"nomeLungo":"MILANO
+        ROGOREDO","nomeBreve":"Milano Rogoredo","label":"Rogoredo","id":"S01820"},{"nomeLungo":"MILANO
+        ROMOLO","nomeBreve":"Milano Romolo","label":null,"id":"S01032"},{"nomeLungo":"MILANO
+        S. CRISTOFORO","nomeBreve":"MI S.Cristoforo","label":null,"id":"S01630"},{"nomeLungo":"MILANO
+        VENEZIA","nomeBreve":"MI Venezia","label":null,"id":"S01649"},{"nomeLungo":"MILANO
+        VILLAPIZZONE","nomeBreve":"MI Villapizzone","label":null,"id":"S01639"}]'
+    http_version: 
+  recorded_at: Tue, 28 Jun 2016 12:47:21 GMT
+recorded_with: VCR 3.0.3

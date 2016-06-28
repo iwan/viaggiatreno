@@ -1,0 +1,37 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/dettaglioStazione/S03200/12
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.viaggiatreno.it
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 28 Jun 2016 11:53:24 GMT
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+      Content-Language:
+      - en-US
+    body:
+      encoding: ASCII-8BIT
+      string: '{"codReg":12,"tipoStazione":3,"dettZoomStaz":[{"codiceStazione":"S03200","zoomStartRange":8,"zoomStopRange":9,"pinpointVisibile":true,"pinpointVisible":true,"labelVisibile":false,"labelVisible":false,"codiceRegione":null},{"codiceStazione":"S03200","zoomStartRange":10,"zoomStopRange":11,"pinpointVisibile":true,"pinpointVisible":true,"labelVisibile":true,"labelVisible":true,"codiceRegione":null}],"pstaz":[],"mappaCitta":{"urlImagePinpoint":"","urlImageBaloon":""},"codiceStazione":"S03200","codStazione":"S03200","lat":45.781438,"lon":12.832375,"latMappaCitta":0.0,"lonMappaCitta":0.0,"localita":{"nomeLungo":"PORTOGRUARO
+        CAORLE","nomeBreve":"Portogruaro C.","label":"Portogruaro","id":"S03200"},"esterno":false,"offsetX":106,"offsetY":20,"nomeCitta":"Portogruaro"}'
+    http_version: 
+  recorded_at: Tue, 28 Jun 2016 11:53:24 GMT
+recorded_with: VCR 3.0.3
