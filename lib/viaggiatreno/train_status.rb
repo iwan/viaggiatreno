@@ -2,7 +2,7 @@ require 'ostruct'
 module Viaggiatreno
   class TrainStatus < SimpleDelegator
     def initialize(hash)
-      hash["fermate"] = (hash[:fermate] || []).map{|e| OpenStruct.new(e)}
+      hash["fermate"] = (hash["fermate"] || []).map{|e| OpenStruct.new(e)}
       super OpenStruct.new(hash)
     end
   end
